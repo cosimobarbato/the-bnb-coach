@@ -220,7 +220,29 @@ nav {
 #testimonials {
   border: 1px solid #A48221; }
   #testimonials h1 {
-    color: #A48221; }
+    color: #A48221;
+    padding-bottom: 3%; }
+  #testimonials .wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #testimonials .item {
+    text-align: left;
+    width: 80%; }
+    #testimonials .item img {
+      width: 80%; }
+  #testimonials h2 {
+    color: #A48221;
+    margin-top: 10%;
+    margin-bottom: 5%; }
+  #testimonials .owl-dots {
+    display: none; }
 
 #contact {
   margin-top: 10%;

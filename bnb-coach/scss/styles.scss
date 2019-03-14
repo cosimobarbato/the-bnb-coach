@@ -253,6 +253,29 @@ nav{
   border: 1px solid $gold;
   h1{
     color: $gold;
+    padding-bottom: 3%;
+  }
+  .wrapper{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  .item{
+    text-align: left;
+    width: 80%;
+    img{
+      width: 80%;
+    }
+  }
+  h2{
+    color: $gold;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .owl-dots{
+    display: none;
   }
 }
 

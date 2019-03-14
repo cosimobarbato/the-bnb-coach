@@ -49,7 +49,39 @@
     </div>
   </section>
   <section id="testimonials" class="section-white-border">
-    <h1>Testimonials</h1>
+    <h1>My Happy Clients</h1>
+    <div class="container">
+      <div class="wrapper">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="images/test1.png" alt="Testimonial 1">
+            <h2>Avery Smith</h2>
+            <p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for"</p>
+          </div>
+          <div class="item">
+            <img src="images/test2.png" alt="Testimonial 2">
+            <h2>Skyler Adelson</h2>
+            <p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for"</p>
+          </div>
+          <div class="item">
+            <img src="images/test3.png" alt="Testimonial 3">
+            <h2>Kris Michaels</h2>
+            <p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for"</p>
+          </div>
+          <div class="item">
+            <img src="images/test1.png" alt="Testimonial 4">
+            <h2>Avery Smith</h2>
+            <p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for"</p>
+          </div>
+          <div class="item">
+            <img src="images/test2.png" alt="Testimonial 5">
+            <h2>Skyler Adelson</h2>
+            <p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for"</p>
+          </div>
+        </div><!-- owl carousel end -->
+      </div><!-- wrapper end -->
+    </div>
+      
   </section>
 
 <?php include "php/contact-form.php" ?>
