@@ -19,7 +19,7 @@
   <nav>
     <div class="container">
       <span id="hamburger">|||</span>
-      <h1 id="main-logo">THE BNB COACH</h1>
+      <a href="index.php"><h1 id="main-logo">THE BNB COACH</h1></a>
       <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>

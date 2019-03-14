@@ -5,7 +5,6 @@
     <div class="about-content">
       <h1>Contact Info</h1>
       <p>cindy@thebnbcoach.com</p>
-      <p>(310) 592-7100</p>
       <p>Los Angeles, CA</p>
     </div>  
   </div>

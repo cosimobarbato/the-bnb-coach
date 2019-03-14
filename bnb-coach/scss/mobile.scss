@@ -10,23 +10,26 @@
 // Mobile Phones & Tablets
 @media (max-width: 768px){
 
+  // GENERAL
   h1{
     font-size: 35px;
   }
 
   .hidden{
-    display: none;
+    display: block;
   }
 
+
+  // UPPER NAV
   #upper-nav{
     display: none;
   }
 
+  // NAV
   #main-logo{
     font-size: 18px;
+    
   }
-
-
   nav{
     padding: 10px 0 0 0;
     margin: 0px;
@@ -48,7 +51,7 @@
       cursor: pointer;
     }
     ul{
-      display: block;
+      display: none;
       background: $gold;
       font-size: 12px;
       text-align: left;
@@ -63,6 +66,7 @@
     }
   }
 
+  // HOMEPAGE
   .hero{
     height: 40vh;
   }
@@ -115,6 +119,8 @@
     height: auto;
   }
 
+  // CONTACT FORM
+
   #contact{
     height: auto;
     h1{
@@ -128,10 +134,75 @@
     }
   }
 
+  // ABOUT
+
+  #about-hero{
+    .container{
+      display: block;
+      padding-top: 5%;
+      text-align: center;
+      img{
+        width: 50%;
+      }
+    }
+    
+  }
+
+  // SERVICES
 
 
-
-
-
+#services-page-hero{
+  text-align: center;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  @include flexColumnCenter;
+  .container{
+    width: 100%;
+  }
 }
+
+#service-page-second-section{
+  text-align: left;
+  
+  img{
+    display: none;
+  }
+  .container{
+    display: block;
+  }
+}
+
+#service-page-right-content{
+  display: block;
+  width: 100%;
+  h1{
+    padding-bottom: 5%;
+  }
+}
+
+#service-page-third-section{
+  padding: 10% 0;
+  height: auto;
+  text-align: left;
+}
+
+// CONTACT PAGE
+#contact-hero{
+  margin: 0;
+  text-align: center;
+  height: auto;
+  .container{
+    display: block;
+    img{
+      display: none;
+    }
+  }
+
+  .about-content{
+    @include flexColumnCenter;
+  }
+}
+
+} // End of mobile media block
 

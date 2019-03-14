@@ -223,10 +223,11 @@ nav {
     color: #A48221; }
 
 #contact {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-bottom: 15%; }
   #contact h1 {
-    color: #A48221; }
+    color: #A48221;
+    padding-bottom: 5%; }
   #contact input {
     padding: 10px;
     width: 30%;
@@ -405,11 +406,21 @@ footer {
   height: 70vh;
   text-align: left; }
 
+#post-title {
+  margin: 5% 0; }
+
+.featured-image {
+  margin: 5% 0; }
+
+#post-content {
+  text-align: left;
+  margin: 5% 10%; }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 35px; }
   .hidden {
-    display: none; }
+    display: block; }
   #upper-nav {
     display: none; }
   #main-logo {
@@ -431,7 +442,7 @@ footer {
     nav #hamburger:hover {
       cursor: pointer; }
     nav ul {
-      display: block;
+      display: none;
       background: #A48221;
       font-size: 12px;
       text-align: left;
@@ -478,4 +489,61 @@ footer {
     #contact input {
       width: 95%; }
     #contact .gold-line {
-      display: none; } }
+      display: none; }
+  #about-hero .container {
+    display: block;
+    padding-top: 5%;
+    text-align: center; }
+    #about-hero .container img {
+      width: 50%; }
+  #services-page-hero {
+    text-align: center;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #services-page-hero .container {
+      width: 100%; }
+  #service-page-second-section {
+    text-align: left; }
+    #service-page-second-section img {
+      display: none; }
+    #service-page-second-section .container {
+      display: block; }
+  #service-page-right-content {
+    display: block;
+    width: 100%; }
+    #service-page-right-content h1 {
+      padding-bottom: 5%; }
+  #service-page-third-section {
+    padding: 10% 0;
+    height: auto;
+    text-align: left; }
+  #contact-hero {
+    margin: 0;
+    text-align: center;
+    height: auto; }
+    #contact-hero .container {
+      display: block; }
+      #contact-hero .container img {
+        display: none; }
+    #contact-hero .about-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
