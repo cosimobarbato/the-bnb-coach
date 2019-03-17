@@ -204,5 +204,16 @@
   }
 }
 
+// ARTICLES PAGE
+
+#articles-page{
+  .article-wrapper{
+    width: 90%;
+  }
+  .sidebar{
+    display: none;
+  }
+}
+
 } // End of mobile media block
 

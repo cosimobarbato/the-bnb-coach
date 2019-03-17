@@ -19,6 +19,10 @@
     </div>
   </section>
   <section id="services" class="section-white-border">
+    <div class="flex-wrapper">
+      <div class="white-line"></div> 
+      <div class="white-line"></div> 
+    </div>
     <div class="container">
       <div class="service-box">
         <img src="images/assessments.png" alt="Assessments Services">
@@ -37,8 +41,6 @@
         </div>
       </div>
       <div class="service-box">
-        <div class="white-line left"></div> 
-        <div class="white-line right"></div> 
         <img src="images/on-call.png" alt="On-Call Services">
         <div class="service-description">
           <h2>ON-CALL GUIDANCE</h2>
@@ -47,11 +49,12 @@
         </div>
       </div>
     </div>
+    
   </section>
   <section id="testimonials" class="section-white-border">
     <h1>My Happy Clients</h1>
-    <div class="container">
-      <div class="wrapper">
+    <!-- <div class="container"> -->
+      <div class="owl-wrapper">
         <div class="owl-carousel owl-theme">
           <div class="item">
             <img src="images/test1.png" alt="Testimonial 1">
@@ -79,8 +82,8 @@
             <p>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for"</p>
           </div>
         </div><!-- owl carousel end -->
-      </div><!-- wrapper end -->
-    </div>
+      </div><!-- owl wrapper end -->
+    <!-- </div> -->
       
   </section>
 

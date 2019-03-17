@@ -10,9 +10,6 @@ body {
   text-align: center;
   width: 100%; }
 
-section {
-  height: auto; }
-
 .section-white-border {
   margin: 2%;
   padding: 7% 0; }
@@ -52,9 +49,15 @@ h3 {
   line-height: 24px;
   font-weight: 300; }
 
+h6 {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 100; }
+
 p {
   line-height: 22px;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 16px; }
 
 .white-line {
   width: 17%;
@@ -69,6 +72,14 @@ p {
 
 .left {
   float: left; }
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 #upper-nav {
   background-color: #4D360D;
@@ -89,6 +100,9 @@ p {
 
 nav {
   background-image: url("../images/nav-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding-top: 0;
   padding-bottom: 1%; }
@@ -171,6 +185,13 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   color: white; }
+  #services .white-line {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center; }
   #services h2 {
     color: #A48221; }
   #services .container {
@@ -205,33 +226,18 @@ nav {
     top: -4px;
     height: 60%;
     padding: 10% 0; }
-  #services h2 {
-    margin: 10% 0; }
   #services p {
     margin: 0 5%; }
   #services a {
-    margin: 0 auto;
-    width: 80%; }
-  #services .white-line {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    margin: 0 auto; }
+  #services .btn {
+    padding: 8px 8px; }
 
 #testimonials {
   border: 1px solid #A48221; }
   #testimonials h1 {
     color: #A48221;
     padding-bottom: 3%; }
-  #testimonials .wrapper {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
   #testimonials .item {
     text-align: left;
     width: 80%; }
@@ -241,8 +247,26 @@ nav {
     color: #A48221;
     margin-top: 10%;
     margin-bottom: 5%; }
+  #testimonials .owl-wrapper {
+    margin: 0 5%; }
+  #testimonials .owl-carousel {
+    padding-left: 10%;
+    padding-right: 10%; }
+  #testimonials .owl-stage-outer {
+    padding-left: 6%; }
   #testimonials .owl-dots {
     display: none; }
+  #testimonials .owl-prev, #testimonials .owl-next {
+    color: #A48221;
+    font-size: 20em;
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    margin-top: -100px; }
+  #testimonials .owl-prev {
+    left: 0px; }
+  #testimonials .owl-next {
+    right: 0px; }
 
 #contact {
   margin-top: 10%;
@@ -277,16 +301,16 @@ nav {
   #contact .gold-line {
     padding-top: 10%; }
   #contact ::-webkit-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
   #contact :-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
   #contact ::-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
   #contact ::placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
 
 footer {
@@ -334,33 +358,24 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-
-#contact-hero {
-  position: relative;
-  background-image: url("../images/gold-texture.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white; }
-  #contact-hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    #contact-hero .container img {
-      margin-top: 5%;
-      max-height: 450px;
-      max-width: 450px; }
-  #contact-hero .about-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  #about-hero #meet-cindy {
+    text-align: right; }
+  #about-hero .white-line {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    width: 12%; }
+  #about-hero .flex-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 10%; }
 
 #services-page-hero {
   background-image: url("../images/services-hero.png");
@@ -428,6 +443,43 @@ footer {
   height: 70vh;
   text-align: left; }
 
+#articles-page {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  #articles-page .article-wrapper {
+    width: 70%; }
+  #articles-page .blog-preview {
+    margin: 10% 0; }
+    #articles-page .blog-preview p {
+      margin: 1% 0; }
+  #articles-page .read-more {
+    font-size: 14px;
+    font-weight: 600; }
+  #articles-page .sidebar {
+    margin-top: 10%;
+    width: 25%; }
+    #articles-page .sidebar h3 {
+      font-size: 14px;
+      font-weight: 600; }
+  #articles-page #sidebar-title {
+    font-size: 12px; }
+  #articles-page .sidebar-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 5%; }
+    #articles-page .sidebar-item .blog-thumb {
+      width: 100px;
+      height: auto; }
+
 #post-title {
   margin: 5% 0; }
 
@@ -437,6 +489,33 @@ footer {
 #post-content {
   text-align: left;
   margin: 5% 10%; }
+
+#contact-hero {
+  position: relative;
+  background-image: url("../images/gold-texture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: auto; }
+  #contact-hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #contact-hero .container img {
+      max-height: 500px;
+      max-width: 500px; }
+  #contact-hero .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 @media (max-width: 768px) {
   h1 {
@@ -568,4 +647,8 @@ footer {
       flex-direction: column;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center; }
+  #articles-page .article-wrapper {
+    width: 90%; }
+  #articles-page .sidebar {
+    display: none; } }

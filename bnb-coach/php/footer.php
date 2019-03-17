@@ -1,8 +1,7 @@
 <footer>
     <div class="container">
       <ul>
-        <li>©TheBNBCoach 2019</li>
-        <li>Los Angeles, CA</li>
+        <li>©TheBNBCoach <span id="current-date"></span></li>
       </ul>
     </div>
   </footer>
