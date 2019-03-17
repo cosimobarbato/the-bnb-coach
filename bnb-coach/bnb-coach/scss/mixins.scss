@@ -1,0 +1,17 @@
+@mixin fullBg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+@mixin goldBg{
+  position: relative;
+  background-image: url("../images/gold-texture.png");
+}
+
+@mixin flexColumnCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
