@@ -1,0 +1,222 @@
+// Upper Nav: Avenir Book, 14
+// Nav: Avenir Heavy, 16px
+// Heading: Avenir Black 40px
+// Subheading: Avenir Light 18px, line height 24
+// Paragraph: Avenir Light 16px, line height 22
+// Button: Avenir Black 16px,  padding 9?
+// Footer: Avenir Medium 16px
+
+
+// Mobile Phones & Tablets
+@media (max-width: 768px){
+
+  // GENERAL
+  h1{
+    font-size: 35px;
+  }
+
+  .hidden{
+    display: block;
+  }
+
+
+  // UPPER NAV
+  #upper-nav{
+    display: none;
+  }
+
+  // NAV
+  #main-logo{
+    font-size: 18px;
+    
+  }
+  nav{
+    padding: 10px 0 0 0;
+    margin: 0px;
+    .container{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    h1{
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    #hamburger{
+      visibility: visible;
+      float: left;
+      margin-left: 20px;
+    }
+    #hamburger:hover{
+      cursor: pointer;
+    }
+    ul{
+      display: none;
+      background: $gold;
+      font-size: 12px;
+      text-align: left;
+      width: 100%;
+    }
+    li{
+      border-bottom: 1px solid lighten($gold, 10%);
+      padding: 5px;
+    }
+    li:last-child{
+      border-bottom: none;
+    }
+  }
+
+  // HOMEPAGE
+  .hero{
+    height: 40vh;
+  }
+
+  #info{
+    height: auto;
+    .white-line{
+      display: none;
+    }
+  }
+
+  #about{
+    height: auto;
+    .container{
+      display: block;
+      text-align: center;
+    }
+    p{
+      margin: 10px 0;
+    }
+    img{
+      margin: 10px 0;
+    }
+  }
+
+  #services{
+    height: auto;
+    .container{
+      display: block;
+    }
+
+    .service-box{
+      margin: 15% 2%;
+      width: 100%;
+      p{
+        margin-bottom: 15%;
+      }
+     }
+
+     .service-description{
+       margin: 0;
+     }
+ 
+    .white-line{
+      display: none;
+    }
+  }
+
+  #testimonials{
+    height: auto;
+  }
+
+  // CONTACT FORM
+
+  #contact{
+    height: auto;
+    h1{
+      margin-bottom: 10%;
+    }
+    input{
+      width: 93%;
+    }
+    .gold-line{
+      display: none;
+    }
+    #contact-form-wrapper{
+      display: block;
+    }
+  }
+
+  // ABOUT
+
+  #about-hero{
+    .container{
+      display: block;
+      padding-top: 5%;
+      text-align: center;
+      img{
+        width: 50%;
+      }
+    }
+    
+  }
+
+  // SERVICES
+
+
+#services-page-hero{
+  text-align: center;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  @include flexColumnCenter;
+  .container{
+    width: 100%;
+  }
+}
+
+#service-page-second-section{
+  text-align: left;
+  
+  img{
+    display: none;
+  }
+  .container{
+    display: block;
+  }
+}
+
+#service-page-right-content{
+  display: block;
+  width: 100%;
+  h1{
+    padding-bottom: 5%;
+  }
+}
+
+#service-page-third-section{
+  padding: 10% 0;
+  height: auto;
+  text-align: left;
+}
+
+// CONTACT PAGE
+#contact-hero{
+  margin: 0;
+  text-align: center;
+  height: auto;
+  .container{
+    display: block;
+    img{
+      display: none;
+    }
+  }
+
+  .about-content{
+    @include flexColumnCenter;
+  }
+}
+
+// ARTICLES PAGE
+
+#articles-page{
+  .article-wrapper{
+    width: 90%;
+  }
+  .sidebar{
+    display: none;
+  }
+}
+
+} // End of mobile media block
+
