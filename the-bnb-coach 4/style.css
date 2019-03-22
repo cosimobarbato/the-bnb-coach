@@ -1,18 +1,14 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: none; }
+  box-sizing: border-box; }
 
 body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   text-align: center;
   width: 100%; }
-
-section {
-  height: auto; }
 
 .section-white-border {
   margin: 2%;
@@ -60,7 +56,8 @@ h6 {
 
 p {
   line-height: 22px;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 16px; }
 
 .white-line {
   width: 17%;
@@ -102,7 +99,10 @@ p {
     align-items: center; }
 
 nav {
-  background-image: url("../images/nav-bg.png");
+  background-image: url("images/nav-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding-top: 0;
   padding-bottom: 1%; }
@@ -131,14 +131,14 @@ nav {
 
 .hero {
   height: 80vh;
-  background-image: url("../images/home-hero.png");
+  background-image: url("images/home-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white; }
 
 #info {
-  background-image: url("../images/info.png");
+  background-image: url("images/info.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +180,7 @@ nav {
 
 #services {
   position: relative;
-  background-image: url("../images/gold-texture.png");
+  background-image: url("images/gold-texture.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,31 +226,18 @@ nav {
     top: -4px;
     height: 60%;
     padding: 10% 0; }
-  #services h2 {
-    margin: 10% 0; }
   #services p {
     margin: 0 5%; }
   #services a {
-    margin: 0 auto;
-    width: 80%; }
+    margin: 0 auto; }
+  #services .btn {
+    padding: 8px 8px; }
 
 #testimonials {
   border: 1px solid #A48221; }
   #testimonials h1 {
     color: #A48221;
     padding-bottom: 3%; }
-  #testimonials .container {
-    position: relative; }
-  #testimonials .wrapper {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
   #testimonials .item {
     text-align: left;
     width: 80%; }
@@ -260,6 +247,13 @@ nav {
     color: #A48221;
     margin-top: 10%;
     margin-bottom: 5%; }
+  #testimonials .owl-wrapper {
+    margin: 0 5%; }
+  #testimonials .owl-carousel {
+    padding-left: 10%;
+    padding-right: 10%; }
+  #testimonials .owl-stage-outer {
+    padding-left: 6%; }
   #testimonials .owl-dots {
     display: none; }
   #testimonials .owl-prev, #testimonials .owl-next {
@@ -269,6 +263,9 @@ nav {
     position: absolute;
     top: 0;
     margin-top: -100px; }
+  #testimonials .owl-prev:hover, #testimonials .owl-next:hover {
+    background: none;
+    color: #cea42a; }
   #testimonials .owl-prev {
     left: 0px; }
   #testimonials .owl-next {
@@ -280,15 +277,23 @@ nav {
   #contact h1 {
     color: #A48221;
     padding-bottom: 5%; }
+  #contact #contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   #contact input {
     padding: 10px;
-    width: 30%;
+    width: 98%;
     margin: 1%;
     border: 2px solid #A48221; }
   #contact textarea {
     display: block;
     margin: 1% auto;
-    width: 95%;
+    width: 93%;
     padding: 10px;
     border: 2px solid #A48221; }
   #contact .btn {
@@ -301,22 +306,24 @@ nav {
     border: 2px solid #A48221; }
   #contact .submit-button {
     border: 2px solid #A48221;
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
     padding: 1%; }
+  #contact .wpcf7-submit:hover {
+    cursor: pointer; }
   #contact .gold-line {
     padding-top: 10%; }
   #contact ::-webkit-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
   #contact :-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
   #contact ::-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
   #contact ::placeholder {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100; }
 
 footer {
@@ -340,7 +347,7 @@ footer {
     margin-right: 10px; }
 
 #about-hero {
-  background-image: url("../images/about-hero.png");
+  background-image: url("images/about-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -364,6 +371,8 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  #about-hero #meet-cindy {
+    text-align: right; }
   #about-hero .white-line {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -381,35 +390,8 @@ footer {
     flex-grow: 1;
     padding-left: 10%; }
 
-#contact-hero {
-  position: relative;
-  background-image: url("../images/gold-texture.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white; }
-  #contact-hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    #contact-hero .container img {
-      margin-top: 5%;
-      max-height: 450px;
-      max-width: 450px; }
-  #contact-hero .about-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-
 #services-page-hero {
-  background-image: url("../images/services-hero.png");
+  background-image: url("images/services-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -431,7 +413,7 @@ footer {
 
 #service-page-second-section {
   position: relative;
-  background-image: url("../images/gold-texture.png");
+  background-image: url("images/gold-texture.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -456,7 +438,7 @@ footer {
   width: 70%; }
 
 #service-page-third-section {
-  background-image: url("../images/service-bottom-banner.png");
+  background-image: url("images/service-bottom-banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -482,13 +464,28 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  #articles-page a {
+    text-decoration: none;
+    color: black; }
+  #articles-page a:hover {
+    color: #A48221; }
   #articles-page .article-wrapper {
     width: 70%; }
   #articles-page .blog-preview {
     margin: 10% 0; }
+    #articles-page .blog-preview p {
+      margin: 1% 0; }
+  #articles-page .read-more {
+    font-size: 14px;
+    font-weight: 600; }
   #articles-page .sidebar {
     margin-top: 10%;
     width: 25%; }
+    #articles-page .sidebar h3 {
+      font-size: 14px;
+      font-weight: 600; }
+  #articles-page #sidebar-title {
+    font-size: 12px; }
   #articles-page .sidebar-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -510,6 +507,33 @@ footer {
 #post-content {
   text-align: left;
   margin: 5% 10%; }
+
+#contact-hero {
+  position: relative;
+  background-image: url("images/gold-texture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: auto; }
+  #contact-hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #contact-hero .container img {
+      max-height: 500px;
+      max-width: 500px; }
+  #contact-hero .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
 @media (max-width: 768px) {
   h1 {
@@ -582,9 +606,11 @@ footer {
     #contact h1 {
       margin-bottom: 10%; }
     #contact input {
-      width: 95%; }
+      width: 93%; }
     #contact .gold-line {
       display: none; }
+    #contact #contact-form-wrapper {
+      display: block; }
   #about-hero .container {
     display: block;
     padding-top: 5%;

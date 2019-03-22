@@ -1,25 +1,13 @@
-// darkerBrown = #4D360D
-// gold = #A48221
-
-// Upper Nav: Avenir Book, 14
-// Nav: Avenir Heavy, 16px
-// Heading: Avenir Black 40px
-// Subheading: Avenir Light 18px, line height 24
-// Paragraph: Avenir Light 16px, line height 22
-// Button: Avenir Black 16px,  padding 9?
-// Footer: Avenir Medium 16px
-
-
 @import "variables";
 @import "mixins";
 
 // ALL PAGES
 
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  display: none;
+  opacity: 0;
 }
 
 body{
@@ -27,10 +15,6 @@ body{
   font-family: 'Lato', sans-serif;
   text-align: center;
   width: 100%;
-}
-
-section{
-  height: auto;
 }
 
 .section-white-border{
@@ -92,6 +76,7 @@ h6{
 p{
   line-height: 22px;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .white-line{
@@ -134,8 +119,8 @@ p{
 }
 
 nav{
-  background-image: url("../images/nav-bg.png");
-  color: white;
+  background-image: url("images/nav-bg.png");
+  @include fullBg;
   padding-top: 0;
   padding-bottom: 1%;
   #hamburger{
@@ -165,12 +150,12 @@ nav{
 
 .hero{
   height: 80vh;
-  background-image: url("../images/home-hero.png");
+  background-image: url("images/home-hero.png");
   @include fullBg;
 }
 
 #info{
-  background-image: url("../images/info.png");
+  background-image: url("images/info.png");
   @include fullBg();
   position: relative;
   h1{
@@ -249,15 +234,14 @@ nav{
     height: 60%;
     padding:10% 0;
   }
-  h2{
-    margin: 10% 0;
-  }
   p{
     margin: 0 5%;
   }
   a{
     margin: 0 auto;
-    width: 80%;
+  }
+  .btn{
+    padding: 8px 8px;
   }
   
 }
@@ -267,16 +251,6 @@ nav{
   h1{
     color: $gold;
     padding-bottom: 3%;
-  }
-  .container{
-    position: relative;
-  }
-  .wrapper{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
   }
   .item{
     text-align: left;
@@ -290,9 +264,24 @@ nav{
     margin-top: 10%;
     margin-bottom: 5%;
   }
+
+  .owl-wrapper{
+    margin: 0 5%;
+  }
+
+  .owl-carousel{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .owl-stage-outer{
+   padding-left: 6%;
+  }
+
   .owl-dots{
     display: none;
   }
+
   .owl-prev, .owl-next{
     color: $gold;
     font-size: 20em;
@@ -301,6 +290,12 @@ nav{
     top: 0;
     margin-top: -100px;
   }
+
+  .owl-prev:hover, .owl-next:hover{
+    background: none;
+    color: lighten( $gold, 10%);
+  }
+
   .owl-prev {
     left: 0px;
   }
@@ -308,13 +303,6 @@ nav{
     right: 0px;
   }
 
-
-
-
-
- 
-
-  
   
 }
 
@@ -327,16 +315,21 @@ nav{
     color: $gold;
     padding-bottom: 5%;
   }
+  #contact-form-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
   input{
     padding: 10px;
-    width: 30%;
+    width: 98%;
     margin: 1%;
     border: 2px solid $gold;
   }
   textarea{
     display: block;
     margin: 1% auto;
-    width: 95%;
+    width: 93%;
     padding: 10px;
     border: 2px solid $gold;
   }
@@ -352,15 +345,19 @@ nav{
   }
   .submit-button{
     border: 2px solid $gold;
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
     padding: 1%;
   }
+  .wpcf7-submit:hover{
+    cursor: pointer;
+  }
+
   .gold-line{
     padding-top: 10%;
   }
   ::placeholder{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
   }
 }
@@ -392,7 +389,7 @@ footer{
 // ABOUT PAGE
 
 #about-hero{
-  background-image: url("../images/about-hero.png");
+  background-image: url("images/about-hero.png");
   @include fullBg();
   .container{
     display: flex;
@@ -404,6 +401,10 @@ footer{
   .about-content{
     margin-left: 5%;
     @include flexColumnCenter;
+  }
+
+  #meet-cindy{
+    text-align: right;
   }
 
   .white-line{
@@ -419,29 +420,11 @@ footer{
   
 }
 
-// CONTACT PAGE
-
-#contact-hero{
-  @include goldBg;
-  @include fullBg();
-  .container{
-    display: flex;
-    img{
-      margin-top: 5%;
-      max-height: 450px;
-      max-width: 450px;
-    }
-  }
-
-  .about-content{
-    @include flexColumnCenter;
-  }
-}
 
 // SERVICES PAGE
 
 #services-page-hero{
-  background-image: url("../images/services-hero.png");
+  background-image: url("images/services-hero.png");
   @include fullBg;
   text-align: left;
   height: 70vh;
@@ -466,29 +449,50 @@ footer{
 }
 
 #service-page-third-section{
-  background-image: url("../images/service-bottom-banner.png");
+  background-image: url("images/service-bottom-banner.png");
   @include fullBg;
   @include flexColumnCenter;
   height: 70vh;
   text-align: left;
 }
 
-// ARTICLES
+// BLOG
 
 #articles-page{
   text-align: left;
   display: flex;
   justify-content: space-between;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: $gold;
+  }
   .article-wrapper{
     width: 70%;
   }
   .blog-preview{
     margin: 10% 0;
+    p{
+      margin: 1% 0;
+    }
+  }
+  .read-more{
+    font-size: 14px;
+    font-weight: 600;
   }
   
   .sidebar{
     margin-top: 10%;
     width: 25%;
+    h3{
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  #sidebar-title{
+    font-size: 12px;
   }
   .sidebar-item{
     display: flex;
@@ -515,6 +519,27 @@ footer{
   text-align: left;
   margin: 5% 10%;
 }
+
+
+// CONTACT PAGE
+
+#contact-hero{
+  @include goldBg;
+  @include fullBg();
+  height: auto;
+  .container{
+    display: flex;
+    img{
+      max-height: 500px;
+      max-width: 500px;
+    }
+  }
+
+  .about-content{
+    @include flexColumnCenter;
+  }
+}
+
 
 
 @import "mobile";

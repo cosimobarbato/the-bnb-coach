@@ -1,8 +1,10 @@
-<?php include "php/head.php"; ?>
+<?php /* Template Name: Services */ ?>
+
+<?php get_header(); ?>
 
 <div id="services-page-hero">
   <div class="container">
-    <h1>You Listing is Live But It's Just the Start</h1>
+    <h1>Your Listing is Live But It's Just the Start</h1>
     <p>Guests with unreasonable demands? Not getting bookings? Need help opening a claim on the resolution center? I can answer many FAQ's and navigate frustrating situations so you and your guests have a great stay at your listing.</p>
   </div>
 </div>
@@ -10,7 +12,7 @@
 <div id="service-page-second-section" class= "section-white-border">
     <div class="container">
       <div id="service-page-image">
-        <img src="images/service-photo.png" alt="Service Photo">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/service-photo.png" alt="Service Photo">
       </div>
       
       <div id="service-page-right-content">
@@ -34,6 +36,5 @@
   </div>
 </div>
 
-
-<?php include "php/contact-form.php" ?>
-<?php include "php/footer.php" ?>
+<?php get_template_part('template-parts/content','contact'); ?>
+<?php get_footer(); ?>
