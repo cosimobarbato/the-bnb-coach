@@ -2,7 +2,7 @@
 
 <div id="services-page-hero">
   <div class="container">
-    <h1>Your Listing is Live But It's Just the Start</h1>
+    <h1>You Listing is Live But It's Just the Start</h1>
     <p>Guests with unreasonable demands? Not getting bookings? Need help opening a claim on the resolution center? I can answer many FAQ's and navigate frustrating situations so you and your guests have a great stay at your listing.</p>
   </div>
 </div>
